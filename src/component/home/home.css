@@ -1,0 +1,46 @@
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+main p{
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+main span{
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.pageBtn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main_myFile{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+.main_OCRPicture{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+.main_law{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.pageBtnText{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}

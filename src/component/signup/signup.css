@@ -1,0 +1,32 @@
+.main_top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_top h1 {
+    margin-bottom: 0;
+}
+
+.main_top p {
+    margin-top: 0;
+}
+
+.main_main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form_row {
+    display: flex;
+    flex-direction: column;
+}
+
+.main_bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
