@@ -1,21 +1,21 @@
-main{
+.resltPage{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.resultBtn{
+.resltPage .resultBtn{
     display: flex;
     flex-direction: row;
 }
 
-.result_main{
+.resltPage .result_main{
     border: 1px solid #000000;  
     border-radius: 8px;
 }
 
-.saveAndShareBtn{
+.resltPage .saveAndShareBtn{
     display: flex;
     flex-direction: row;
     justify-content:space-between;

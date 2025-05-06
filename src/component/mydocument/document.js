@@ -1,5 +1,9 @@
 import React from "react"
 import { useNavigate } from 'react-router-dom';
+import { GoArrowLeft } from "react-icons/go";
+import { IoDocumentTextOutline } from "react-icons/io5";
+import { FiUpload } from "react-icons/fi";
+import BottomNav from "../../lib/nav/BottomNav";
 import "./document.css";
 
 const Document = () => {
@@ -21,12 +25,11 @@ const Document = () => {
         };
     return (
         <>
-            <header>
-                <div>
-                    <img className="backBtn"/>
-                </div>
+            <header className="pageHeader">
+                <GoArrowLeft className="backBtn" onClick={goHome}/>
+                <p>내 문서 기록</p>
             </header>
-            <main>
+            <main className="docPage">
                 <div className="main_top">
                     <button>전체</button>
                     <button>근로계약서</button>
@@ -34,62 +37,41 @@ const Document = () => {
                 </div>
                 <div className="main_main">
                     <button className="fileBtn">
-                        <img className="file"/>
+                        <IoDocumentTextOutline/>
                         <div className="file_title">
                             <p>근로계약서</p>
                             <Date></Date>
                         </div>
-                        <img className="Shortcut"/>
+                        <FiUpload/>
                     </button>
                     <button className="fileBtn">
-                        <img className="file"/>
+                        <IoDocumentTextOutline/>
                         <div className="file_title">
                             <p>임대차계약서서</p>
                             <Date></Date>
                         </div>
-                        <img className="Shortcut"/>
+                        <FiUpload/>
                     </button>
                     <button className="fileBtn">
-                        <img className="file"/>
+                        <IoDocumentTextOutline/>
                         <div className="file_title">
                             <p>보험험계약서</p>
                             <Date></Date>
                         </div>
-                        <img className="Shortcut"/>
+                        <FiUpload/>
                     </button>
                     <button className="fileBtn">
-                        <img className="file"/>
+                        <IoDocumentTextOutline/>
                         <div className="file_title">
                             <p>기타타계약서</p>
                             <Date></Date>
                         </div>
-                        <img className="Shortcut"/>
+                        <FiUpload/>
                     </button>
                 </div>
             </main>
+            <BottomNav />
 
-            <nav>
-                <button onClick={goHome} className="bottom_nav_btn">
-                    <img className="home"/>
-                    <span>홈</span>
-                </button>
-                <button onClick={goMydocument} className="bottom_nav_btn">
-                    <img className="file"/>
-                    <span>내 문서</span>
-                </button>
-                <button onClick={goOcr} className="bottom_nav_btn">
-                    <img className="camera"/>
-                    <span>스캔</span>
-                </button>
-                <button onClick={goInformation} className="bottom_nav_btn">
-                    <img className="lawBook"/>
-                    <span>법률 정보</span>
-                </button>
-                    <button onClick={goMypage} className="bottom_nav_btn">
-                    <img className="profileBtn"/>
-                    <span>내 정보</span>
-                </button>
-            </nav>
         </>
 
     )

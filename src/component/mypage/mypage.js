@@ -1,8 +1,14 @@
-import React from "react"
-import { useNavigate } from 'react-router-dom';
+import React, { useState } from "react";     
+import { useNavigate, Link } from 'react-router-dom';
+import { GoArrowLeft } from "react-icons/go";
+import SelectLanguage from "../../lib/selectbox/SelectLanguage";
+import SelectNation from "../../lib/selectbox/SelectNation";
+import BottomNav from "../../lib/nav/BottomNav";
 import "./mypage.css";
 
 const Mypage = () => {
+    const [lang, setLang] = useState("");
+    const [nat, setNat] = useState("");
     const navigate = useNavigate();
     const goHome = () => {
         navigate("/home");
@@ -24,20 +30,26 @@ const Mypage = () => {
             };
     return (
         <>
-            <header>
-                <div>
-                    <img className="backBtn"/>
-                </div>
+            <header className="pageHeader">
+                <GoArrowLeft className="backBtn" onClick={goHome}/>
+                <p>내 정보 관리</p>
             </header>
 
-            <main>
+            <main className="myPage">
                 <h1>개인 정보</h1>
                 <div className="main_main">
-                    <label htmlFor="nation">국적</label>
-                    <input id="nation" placeholder="국적을 베트남" />
 
-                    <label htmlFor="lang">사용언어</label>
-                    <input id="lang" placeholder="베트남어" />
+                        <label htmlFor="nation">국적</label>
+                        <SelectNation
+                            value={nat}
+                            onChange={e => setNat(e.target.value)}
+                        />
+
+                        <label htmlFor="lang">사용언어</label>
+                        <SelectLanguage
+                            value={lang}
+                            onChange={e => setLang(e.target.value)}
+                        />
 
                     <label htmlFor="username">이름</label>
                     <input id="username" placeholder="홍길동"/>
@@ -47,45 +59,16 @@ const Mypage = () => {
 
                     <label htmlFor="id">아이디</label>
                     <input id="id" placeholder="honggildong"/>
-
-                    <label htmlFor="pw">현재 비밀번호</label>
-                    <input id="pw" placeholder="현재 비밀번호를 입력하세요"/>
-
-                    <label htmlFor="newpw">새 비밀번호</label>
-                    <input id="newpw" placeholder="현재 비밀번호를 입력하세요"/>
-
-                    <label htmlFor="newpwCheck">새 비밀번호 확인</label>
-                    <input id="newpwCheck" placeholder="비밀번호를 다시 입력하세요"/>
                 </div>
+
+                <Link to="/mypagepw">비밀번호 재설정</Link>
 
                 <div className="main_bottom">
                     <button>저장하기</button>
                     <button onClick={goLogin}>로그아웃</button>
                 </div>
             </main>
-
-            <nav>
-                <button onClick={goHome} className="bottom_nav_btn">
-                    <img className="home"/>
-                    <span>홈</span>
-                </button>
-                <button onClick={goMydocument} className="bottom_nav_btn">
-                    <img className="file"/>
-                    <span>내 문서</span>
-                </button>
-                <button onClick={goOcr} className="bottom_nav_btn">
-                    <img className="camera"/>
-                    <span>스캔</span>
-                </button>
-                <button onClick={goInformation} className="bottom_nav_btn">
-                    <img className="lawBook"/>
-                    <span>법률 정보</span>
-                </button>
-                    <button onClick={goMypage} className="bottom_nav_btn">
-                    <img className="profileBtn"/>
-                    <span>내 정보</span>
-                </button>
-            </nav>
+            <BottomNav />
         </>
     )
 }

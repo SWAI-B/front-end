@@ -1,0 +1,18 @@
+.titlePage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+}
+
+.logoImg {
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+    margin-top: 10px;
+}

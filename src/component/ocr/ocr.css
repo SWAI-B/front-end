@@ -1,10 +1,4 @@
-header{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-}
-
-.main_main{
+.ocrPage .main_main{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,13 +8,19 @@ header{
     border-radius: 8px;
 }
 
-.main_main_text{
+.ocrPage .main_main_text{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.main_btm{
+.ocrPage .main_btm{
     display: flex;
     flex-direction: row;
+}
+
+.ocrPage .main_bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

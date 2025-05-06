@@ -1,5 +1,10 @@
 import React from "react"
 import { useNavigate } from 'react-router-dom';
+import { GoArrowLeft } from "react-icons/go";
+import { IoCameraOutline } from "react-icons/io5";
+import { FiUpload } from "react-icons/fi";
+
+import BottomNav from "../../lib/nav/BottomNav";
 import "./ocr.css";
 
 const Ocr = () => {
@@ -27,12 +32,12 @@ const Ocr = () => {
 
     return (
         <>
-            <header>
-                <img className="backBtn"/>
+            <header className="pageHeader">
+                <GoArrowLeft className="backBtn" onClick={goHome}/>
                 <p>근로계약서 스캔</p>
             </header>
 
-            <main>
+            <main className="ocrPage">
                 <div className="main_main">
                     <div className="main_main_text">
                         <p>근로 계약서를 촬영하거나 파일을 업로드하세요</p>
@@ -40,11 +45,11 @@ const Ocr = () => {
                     </div>
                     <div className="main_btm">
                         <button onClick={goResult} className="cameraBtn">
-                            <img className="camera"/>
+                            <IoCameraOutline/>
                             <p>카메라</p>
                         </button>
                         <button className="uploadBtn">
-                            <img className="upload"/>
+                            <FiUpload/>
                             <p>업로드</p>
                         </button>
                     </div>
@@ -54,29 +59,7 @@ const Ocr = () => {
                     <p>번역 및 범률 정보 재공 목적으로만 사용됩니다.</p>
                 </div>
             </main>
-
-            <nav>
-                <button onClick={goHome} className="bottom_nav_btn">
-                    <img className="home"/>
-                    <span>홈</span>
-                </button>
-                <button onClick={goMydocument} className="bottom_nav_btn">
-                    <img className="file"/>
-                    <span>내 문서</span>
-                </button>
-                <button onClick={goOcr} className="bottom_nav_btn">
-                    <img className="camera"/>
-                    <span>스캔</span>
-                </button>
-                <button onClick={goInformation} className="bottom_nav_btn">
-                    <img className="lawBook"/>
-                    <span>법률 정보</span>
-                </button>
-                    <button onClick={goMypage} className="bottom_nav_btn">
-                    <img className="profileBtn"/>
-                    <span>내 정보</span>
-                </button>
-            </nav>
+            <BottomNav />
         </>
     );
 };

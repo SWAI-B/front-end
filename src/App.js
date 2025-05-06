@@ -11,6 +11,8 @@ import Result from './component/ocr-result/result';
 import Summary from './component/ocr-summary/summary';
 import Signup from './component/signup/signup';
 import Title from './component/title/title';
+import Mypagepw from './component/mypage/mypagepw';
+
 
 function App() {
   return (
@@ -21,6 +23,7 @@ function App() {
           <Route path="/information" element={<Information/>} />
           <Route path="/mydocument" element={<Document/>} />
           <Route path="/mypage" element={<Mypage/>} />
+          <Route path="/mypagepw" element={<Mypagepw/>} />
           <Route path="/ocr" element={<Ocr/>} />
           <Route path="/ocr-result" element={<Result/>} />
           <Route path="/ocr-summary" element={<Summary/>} />

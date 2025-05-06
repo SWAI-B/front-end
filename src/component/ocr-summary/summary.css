@@ -1,43 +1,51 @@
-main{
+.sumaryPage{
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.warning_box{
+.sumaryPage .warning_box{
     display: flex;
     flex-direction: row;
     gap: 10px;
     border: 1px solid #ff0000;  
     border-radius: 8px;
 }
-.warning_text{
+.sumaryPage .warning_text{
     display: flex;
     flex-direction: column;
 }
 
-.main_box{
+.sumaryPage .main_box{
     display: flex;
     flex-direction: column;
     border: 1px solid #000000;  
     border-radius: 8px;
 }
 
-.main_box_title{
+.sumaryPage .main_box_title{
     display: flex;
     flex-direction: row;
     gap: 10px;
 }
 
-.detail_btn{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    align-items: center;
-}
-
-.add_text{
+.sumaryPage .content{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center; 
+}
+
+.sumaryPage .detail_btn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; 
+}
+
+.sumaryPage .add_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
 }

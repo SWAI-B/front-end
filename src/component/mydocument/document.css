@@ -1,19 +1,29 @@
-main{
+.pageHeader{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.pageHeader p{
+    margin: 0 auto;
+}
+
+.docPage{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.main_top{
+.docPage .main_top{
     display: flex;
     flex-direction: row;
 }
-.fileBtn{
+.docPage .fileBtn{
     display: flex;
     flex-direction: row;
     gap: 12px;
 }
-.file_title{
+.docPage .file_title{
     display: flex;
     flex-direction: column;
     align-items: flex-start;

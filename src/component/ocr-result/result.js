@@ -1,5 +1,10 @@
 import React from "react"
 import { useNavigate } from 'react-router-dom';
+import { GoArrowLeft } from "react-icons/go";
+import { FiUpload } from "react-icons/fi";
+import { FaRegSave } from "react-icons/fa";
+
+
 import "./result.css";
 
 
@@ -8,14 +13,17 @@ const Result = () => {
     const goSummary = () => {
         navigate("/ocr-summary");
     };
+    const goHome = () => {
+        navigate("/home");
+    };
     return (
         <>
-            <header>
-                <img className="backBtn"/>
+            <header className="pageHeader">
+                <GoArrowLeft className="backBtn" onClick={goHome}/>
                 <p>번역 결과</p>
             </header>
 
-            <main>
+            <main className="resltPage">
                 <div className="resultBtn">
                     <button>번역 결과</button>
                     <button>원본 텍스트</button>
@@ -27,11 +35,11 @@ const Result = () => {
                 
                 <div className="saveAndShareBtn">
                     <button className="saveBtn">
-                        <image className="saveImg"/>
+                        <FaRegSave/>
                         <p>저장하기</p>
                     </button>
                     <button className="shareBtn">
-                        <image className="shareImg"/>
+                        <FiUpload/>
                         <p>공유하기</p>
                     </button>
                 </div>

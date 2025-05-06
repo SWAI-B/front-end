@@ -1,4 +1,4 @@
-.myPage{
+.mypwPage{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -6,18 +6,18 @@
     
 }
 
-.myPage .main_main{
+.mypwPage .main_main{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     
 }
-.myPage input{
+.mypwPage input{
     width: 100%;
     max-width: 700px;
 }
 
-.myPage .main_bottom{
+.mypwPage .main_bottom{
     display: flex;
     flex-direction: row;
 }

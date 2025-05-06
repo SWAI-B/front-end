@@ -1,45 +1,55 @@
-.logo{
+.home_logo {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
-main{
+
+.home_logo .logoText {
+    margin: 0 auto; 
+}
+
+.home_logo .profileBtn,
+.home_logo .hamburgerBtn {
+    margin-left: 8px;
+}
+
+.homePage{
     display: flex;
     flex-direction: column;
 }
-main p{
+.homePage p{
     margin-bottom: 0px;
     margin-top: 10px;
 }
-main span{
+.homePage span{
     display: inline-block;
     margin-bottom: 10px;
 }
 
-.pageBtn{
+.homePage .pageBtn{
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.main_myFile{
+.homePage .main_myFile{
     display: flex;
     flex-direction: row;
     gap: 12px;
 }
-.main_OCRPicture{
+.homePage .main_OCRPicture{
     display: flex;
     flex-direction: row;
     gap: 12px;
 }
-.main_law{
+.homePage .main_law{
     display: flex;
     flex-direction: row;
     gap: 12px;
 }
 
-.pageBtnText{
+.homePage .pageBtnText{
     display: flex;
     flex-direction: column;
     align-items: flex-start;

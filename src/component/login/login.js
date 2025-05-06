@@ -2,6 +2,10 @@ import React from "react"
 import { useNavigate, Link } from 'react-router-dom';
 import axios from "axios";
 import "./login.css";
+import { GoArrowLeft } from "react-icons/go";
+import logoImg from "../../img/logoimg.jpg";
+import logoText from "../../img/logotext.png";
+
 
 const Login = () => {
     
@@ -9,9 +13,10 @@ const Login = () => {
     const loginToHome = () => {
         navigate('/home');
         }
-    const loginToSign = () => {
-        navigate('/signup');
+    const goToTitle = () => {
+        navigate('/title');
         }
+        
 
 /*  Api 연습
     const api = "https://api.upbit.com/v1/ticker?markets=KRW-BTC";
@@ -29,15 +34,15 @@ const Login = () => {
         <>
             <header>
                 <div>
-                    <img className="backBtn"/>
+                    <GoArrowLeft className="backBtn" onClick={goToTitle}/>
                 </div>
             </header>
 
-            <main>
+            <main className="loginPage">
                 <div className="main_top">
-                    <div className="main_top_logo">
-                        <div><img className="logoImg"/></div>
-                        <div><img className="logoName"/></div>
+                    <div className="logo">
+                        <img src={logoImg} className="logoImg"/>
+                        <img src={logoText} className="logoText"/>
                     </div>
                     <h1>로그인</h1>
                     <p>계정에 로그인하여 서비스를 이용하세요</p>

@@ -1,32 +1,37 @@
-.main_top {
+header {
+    border-bottom: 1px solid #000000;
+    padding-bottom: 8px;             
+}
+
+.loginPage .main_top {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.main_top h1 {
+.loginPage .main_top h1 {
     margin-bottom: 0;
 }
 
-.main_top p {
+.loginPage .main_top p {
     margin-top: 0;
 }
 
 
-.main_main{
+.loginPage .main_main{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.main_main_id_pw{
+.loginPage .main_main_id_pw{
     display: flex;
     flex-direction: column;
 }
 
-.main_main_password{
+.loginPage .main_main_password{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
