@@ -9,6 +9,7 @@ import Mypage from './component/mypage/mypage';
 import Ocr from './component/ocr/ocr';
 import Result from './component/ocr-result/result';
 import Summary from './component/ocr-summary/summary';
+import Setmyinform from './component/signup/setmyinform';
 import Signup from './component/signup/signup';
 import Title from './component/title/title';
 import Mypagepw from './component/mypage/mypagepw';
@@ -28,6 +29,7 @@ function App() {
           <Route path="/ocr-result" element={<Result/>} />
           <Route path="/ocr-summary" element={<Summary/>} />
           <Route path="/signup" element={<Signup/>} />
+          <Route path="/setmyinform" element={<Setmyinform/>} />
           <Route path="/title" element={<Title/>} />
         </Routes>
     </BrowserRouter>

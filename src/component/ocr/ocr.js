@@ -32,7 +32,7 @@ const Ocr = () => {
 
     return (
         <>
-            <header className="pageHeader">
+            <header>
                 <GoArrowLeft className="backBtn" onClick={goHome}/>
                 <p>근로계약서 스캔</p>
             </header>
@@ -41,19 +41,20 @@ const Ocr = () => {
                 <div className="main_main">
                     <div className="main_main_text">
                         <p>근로 계약서를 촬영하거나 파일을 업로드하세요</p>
-                        <p>개인정보는 자동으로 필터링됩니다.</p>
+                        <span>개인정보는 자동으로 필터링됩니다.</span>
                     </div>
                     <div className="main_btm">
                         <button onClick={goResult} className="cameraBtn">
-                            <IoCameraOutline/>
+                            <IoCameraOutline className="icon"/>
                             <p>카메라</p>
                         </button>
                         <button className="uploadBtn">
-                            <FiUpload/>
+                            <FiUpload className="icon"/>
                             <p>업로드</p>
                         </button>
                     </div>
                 </div>
+
                 <div className="main_bottom">
                     <p>촬영된 문서는 개인정보 보호를 위해 자동으로 필터링 됩니다.</p>
                     <p>번역 및 범률 정보 재공 목적으로만 사용됩니다.</p>

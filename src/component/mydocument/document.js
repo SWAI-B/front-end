@@ -1,6 +1,6 @@
 import React from "react"
 import { useNavigate } from 'react-router-dom';
-import { GoArrowLeft } from "react-icons/go";
+import { GoArrowLeft, GoPencil } from "react-icons/go";
 import { IoDocumentTextOutline } from "react-icons/io5";
 import { FiUpload } from "react-icons/fi";
 import BottomNav from "../../lib/nav/BottomNav";
@@ -11,21 +11,10 @@ const Document = () => {
     const goHome = () => {
         navigate("/home");
         };
-    const goMypage = () => {
-        navigate("/mypage");
-        };
-    const goMydocument = () => {
-        navigate("/mydocument");
-        };
-    const goOcr = () => {
-        navigate("/ocr");
-        };
-    const goInformation = () => {
-        navigate("/information");
-        };
+
     return (
         <>
-            <header className="pageHeader">
+            <header>
                 <GoArrowLeft className="backBtn" onClick={goHome}/>
                 <p>내 문서 기록</p>
             </header>
@@ -37,36 +26,48 @@ const Document = () => {
                 </div>
                 <div className="main_main">
                     <button className="fileBtn">
-                        <IoDocumentTextOutline/>
+                        <IoDocumentTextOutline className="fileicon"/>
                         <div className="file_title">
-                            <p>근로계약서</p>
-                            <Date></Date>
+                            <div>
+                                <p>근로계약서</p>
+                                <GoPencil/>
+                            </div>
+                            <span>0000-00-00</span>
                         </div>
-                        <FiUpload/>
+                        <FiUpload className="shareicon"/>
                     </button>
                     <button className="fileBtn">
-                        <IoDocumentTextOutline/>
+                        <IoDocumentTextOutline className="fileicon"/>
                         <div className="file_title">
-                            <p>임대차계약서서</p>
-                            <Date></Date>
+                            <div>
+                                <p>임대차계약서</p>
+                                <GoPencil/>
+                            </div>
+                            <span>0000-00-00</span>
                         </div>
-                        <FiUpload/>
+                        <FiUpload className="shareicon"/>
                     </button>
                     <button className="fileBtn">
-                        <IoDocumentTextOutline/>
+                        <IoDocumentTextOutline className="fileicon"/>
                         <div className="file_title">
-                            <p>보험험계약서</p>
-                            <Date></Date>
+                            <div>
+                                <p>보험계약서</p>
+                                <GoPencil/>
+                            </div>
+                            <span>0000-00-00</span>
                         </div>
-                        <FiUpload/>
+                        <FiUpload className="shareicon"/>
                     </button>
                     <button className="fileBtn">
-                        <IoDocumentTextOutline/>
+                        <IoDocumentTextOutline className="fileicon"/>
                         <div className="file_title">
-                            <p>기타타계약서</p>
-                            <Date></Date>
+                            <div>
+                                <p>기타계약서</p>
+                                <GoPencil/>
+                            </div>
+                            <span>0000-00-00</span>
                         </div>
-                        <FiUpload/>
+                        <FiUpload className="shareicon"/>
                     </button>
                 </div>
             </main>

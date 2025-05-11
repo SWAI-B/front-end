@@ -15,7 +15,7 @@ const Title = () => {
         navigate('/');
         }
     const goToSignup = () => {
-        navigate('/signup');
+        navigate('/setmyinform');
         }
 
     return (
@@ -35,10 +35,10 @@ const Title = () => {
                 />
 
                 <div className="main_main_btn">
-                    <button onClick={goToLogin}>로그인</button>
-                    <button onClick={goToSignup}>회원가입</button>
+                    <button onClick={goToLogin} className="loginBtn">로그인</button>
+                    <button onClick={goToSignup} className="signBtn">회원가입</button>
                 </div>
-                <p>회원가입 시 이용약관과 개인정보처리방침에 동의하게 됩니다.</p>
+                <span>회원가입 시 이용약관과 개인정보처리방침에 동의하게 됩니다.</span>
             </main>
         </>
     )

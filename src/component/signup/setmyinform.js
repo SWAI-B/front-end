@@ -9,15 +9,18 @@ import "./signup.css";
 
 
 
-const Signup = () => {
+const Setmyinform = () => {
     const [lang, setLang] = useState("");
     const [nat, setNat] = useState("");
     const navigate = useNavigate();
     const goToLogin = () => {
         navigate("/");
     };
-    const goTosetmyinform = () => {
-        navigate("/setmyinform");
+    const goTotitle = () => {
+        navigate("/title");
+    };
+        const goToSignup = () => {
+        navigate("/signup");
     };
 
 
@@ -25,7 +28,7 @@ const Signup = () => {
         <>
             <header>
                 <div>
-                    <GoArrowLeft className="backBtn" onClick={goTosetmyinform}/>
+                    <GoArrowLeft className="backBtn" onClick={goTotitle}/>
                 </div>
             </header>
 
@@ -41,19 +44,26 @@ const Signup = () => {
 
                 <div className="main_main">
                     <div className="form_row">
-                        <label htmlFor="id">아이디</label>
-                        <input className="inputBox" id="id" placeholder="아이디를 입력하세요"/>
+                        <label htmlFor="nation">국적</label>
+                        <SelectNation
+                            value={nat}
+                            onChange={e => setNat(e.target.value)}
+                        />
+                        <label htmlFor="lang">사용언어</label>
+                        <SelectLanguage
+                            value={lang}
+                            onChange={e => setLang(e.target.value)}
+                        />
+                        <label htmlFor="username">이름</label>
+                        <input className="inputBox" id="username" placeholder="이름을 입력하세요"/>
 
-                        <label htmlFor="pw">비밀번호</label>
-                        <input className="inputBox" id="pw" placeholder="비밀번호를 입력하세요"/>
-
-                        <label htmlFor="pwCheck">비밀번호 확인</label>
-                        <input className="inputBox" id="pwCheck" placeholder="비밀번호를 다시 입력하세요"/>
+                        <label htmlFor="phoneNum">연락처</label>
+                        <input className="inputBox" id="phoneNum" placeholder="연락처를 입력하세요"/>
                     </div>
                 </div>
 
                 <div className="main_bottom">
-                    <button onClick={goToLogin} className="BlueBtn">가입하기</button>
+                    <button onClick={goToSignup} className="BlueBtn" >다음</button>
                     <div className="main_main_signUp">
                         <span>이미 계정이 있으신가요?</span>
                         <Link to="/">로그인</Link>
@@ -63,4 +73,4 @@ const Signup = () => {
         </>
     );
 };
-export default Signup
+export default Setmyinform

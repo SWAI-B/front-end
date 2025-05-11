@@ -30,53 +30,46 @@ const Information = () => {
 
     return (
         <>
-            <header className="pageHeader">
+            <header>
                 <GoArrowLeft className="backBtn" onClick={goHome}/>
                 <p>법률 정보</p>
             </header>
 
             <main className="informPage">
-                <p>외국인 근로자 관련 주요 법률정보를 확인하세요</p>
+                <p className="main_title">외국인 근로자 관련 주요 법률정보를 확인하세요</p>
                 <div className="row_inform_box">
                     <button className="row_inform">
-                        <IoDocumentTextOutline/>
+                        <IoDocumentTextOutline className="fileicon"/>
                         <div className="row_inform_text">
                             <p>근로계약 관련 법률</p>
-                            <p>근로계약 체결, 해지, 갱신에 관한 법률 정보</p>
+                            <span>근로계약 체결, 해지, 갱신에 관한 법률 정보</span>
                         </div>
                     </button>                
                     <button className="row_inform">
-                        <IoDocumentTextOutline/>
+                        <IoDocumentTextOutline className="fileicon"/>
                         <div className="row_inform_text">
                             <p>근로계약 관련 법률</p>
-                            <p>근로계약 체결, 해지, 갱신에 관한 법률 정보</p>
+                            <span>근로계약 체결, 해지, 갱신에 관한 법률 정보</span>
                         </div>
                     </button>                
                     <button className="row_inform">
-                        <IoDocumentTextOutline/>
+                        <IoDocumentTextOutline className="fileicon"/>
                         <div className="row_inform_text">
                             <p>근로계약 관련 법률</p>
-                            <p>근로계약 체결, 해지, 갱신에 관한 법률 정보</p>
+                            <span>근로계약 체결, 해지, 갱신에 관한 법률 정보</span>
                         </div>
                     </button>                
                     <button className="row_inform">
-                        <IoDocumentTextOutline/>
+                        <IoDocumentTextOutline className="fileicon"/>
                         <div className="row_inform_text">
                             <p>근로계약 관련 법률</p>
-                            <p>근로계약 체결, 해지, 갱신에 관한 법률 정보</p>
+                            <span>근로계약 체결, 해지, 갱신에 관한 법률 정보</span>
                         </div>
                     </button>                
-                    <button className="row_inform">
-                        <IoDocumentTextOutline/>
-                        <div className="row_inform_text">
-                            <p>근로계약 관련 법률</p>
-                            <p>근로계약 체결, 해지, 갱신에 관한 법률 정보</p>
-                        </div>
-                    </button>
                 </div>
                 <div className="row_site_box">
                     <div className="row_site_tilte">
-                        <IoBookOutline/>
+                        <IoBookOutline className="icon"/>
                         <p>외부 법률 정보 자료</p>
                     </div>
                     <button className="row_site_link">

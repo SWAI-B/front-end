@@ -50,20 +50,21 @@ const Login = () => {
 
                 <div className="main_main">
                     <div className="main_main_id_pw">
+
                         <label htmlFor="id">아이디</label>
-                        <input id="id" placeholder="아이디를 입력하세요"/>
+                        <input className="inputBox" id="id" placeholder="아이디를 입력하세요"/>
 
                         <div className="main_main_password">
                             <label htmlFor="pw">비밀번호</label>
                             <div>찾기</div>   
                         </div>
-                        <input id="pw" placeholder="비밀번호를 입력하세요"/>
+                        <input className="inputBox" id="pw" placeholder="비밀번호를 입력하세요"/>
 
-                        <button onClick={loginToHome}>로그인</button>
-                    </div>
-                    <div className="main_main_signUp">
-                        <span>계정이 없으신가요?</span>
-                        <Link to="/signup">회원가입</Link>
+                        <div className="main_main_signUp">
+                            <span>계정이 없으신가요?</span>
+                            <Link to="/setmyinform">회원가입</Link>
+                        </div>
+                        <button onClick={loginToHome} className="BlueBtn">로그인</button>
                     </div>
                 </div>
             </main>

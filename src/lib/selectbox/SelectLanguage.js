@@ -1,5 +1,6 @@
 import React from "react";
-import "./SelectLanguage.css";
+import "./Selectbox.css";
+
 
 const languageOptions = [
     { value: "ko", label: "한국어" },
@@ -20,6 +21,7 @@ export default function SelectLanguage({
                 <option key={val} value={val}>
                     {label}
                 </option>
+
         ))}
         </select>
     );
