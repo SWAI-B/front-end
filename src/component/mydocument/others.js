@@ -6,16 +6,16 @@ import { HiArrowTopRightOnSquare } from "react-icons/hi2";
 import BottomNav from "../../lib/nav/BottomNav";
 import "./document.css";
 
-const Document = () => {
+const Others = () => {
     const navigate = useNavigate();
     const goHome = () => {
         navigate("/home");
         };
+        const goDoc = () => {
+        navigate("/mydocument");
+        };
         const goEnploy = () => {
         navigate("/employment");
-        };
-        const goOthers = () => {
-        navigate("/others");
         };
 
     return (
@@ -26,9 +26,9 @@ const Document = () => {
             </header>
             <main className="docPage">
                 <div className="main_top">
-                    <button className="nowPageBtn">전체</button>
+                    <button onClick={goDoc}>전체</button>
                     <button onClick={goEnploy}>근로계약서</button>
-                    <button onClick={goOthers}>기타</button>
+                    <button className="nowPageBtn">기타</button>
                 </div>
                 <div className="main_main">
                     <button className="fileBtn">
@@ -83,4 +83,4 @@ const Document = () => {
 
     )
 }
-export default Document
+export default Others

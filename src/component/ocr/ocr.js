@@ -60,7 +60,9 @@ const Ocr = () => {
                     <p>번역 및 범률 정보 재공 목적으로만 사용됩니다.</p>
                 </div>
             </main>
-            <BottomNav />
+            <footer>
+                <BottomNav />
+            </footer>
         </>
     );
 };

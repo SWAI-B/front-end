@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 26px;
+    margin: 26px 0px;
 }
 
 .signPage .logo{
@@ -12,22 +12,25 @@
 }
 
 .signPage .main_top h1 {
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin: 0;
     font-size: 24px;
 }
 
 .signPage .main_top p {
     margin-top: 10px;
+    margin-bottom: 0px;
     font-size: 16px;
     color: #64748B;
 }
+
+
 
 .signPage .main_main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
+    padding: 0px 20px;
 }
 
 .signPage .form_row {
@@ -35,20 +38,19 @@
     flex-direction: column;
 }
 
-.form_row label{
-    margin-top: 10px;
-}
 
 .signPage .main_bottom{   
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
+    padding: 0px 20px;
     margin-top: 107px;
 }
 
 .signPage .main_bottom .main_main_signUp{
     display: flex;
+    align-self: center;
     margin-top: 90px;
     gap: 10px;
 }

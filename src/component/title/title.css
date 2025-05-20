@@ -1,30 +1,20 @@
 .titlePage{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: center;  
+    align-items: center;      
+    margin: 0 20px;
 }
 
-.logo{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.titlePage .logo{
     margin-top: 160px;
     margin-bottom: 40px;
 }
 
-.logoImg {
-    width: 64px;    
-}
-
-.logoText{
-    width: 117px;
-    height: 23.68px;
-}
-
 .titlePage h1{
     font-weight: bold; 
-    font-size: 24px;
+    font-size: 23px;
+
 }
 
 .titlePage p{
@@ -44,6 +34,7 @@
     flex-direction: row;
     gap: 14px;
 }
+
 
 .titlePage .main_main_btn button {
     width: 178px;    

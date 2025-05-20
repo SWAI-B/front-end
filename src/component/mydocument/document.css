@@ -36,8 +36,7 @@ header p{
     padding: 5px;
 }
 
-
-.docPage .main_top button{
+.docPage .main_top .nowPageBtn{
     width: 110px;
     height: 40px;
     border: none;
@@ -45,6 +44,15 @@ header p{
     background-color: #ffffff;
     padding: 5px;
 }
+
+.docPage .main_top button{
+    width: 110px;
+    height: 40px;
+    border: none;
+    padding: 5px;
+    background-color: #F1F5F9;
+}
+
 
 .docPage .fileBtn{
     display: flex;

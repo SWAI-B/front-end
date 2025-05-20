@@ -9,7 +9,7 @@ import BottomNav from "../../lib/nav/BottomNav";
 import "./result.css";
 
 
-const Result = () => {
+const Original = () => {
     const navigate = useNavigate();
     const goSummary = () => {
         navigate("/ocr-summary");
@@ -20,8 +20,8 @@ const Result = () => {
     const goRender = () => {
         navigate("/render");
     };
-    const goOriginal = () => {
-        navigate("/original");
+    const goResult = () => {
+        navigate("/ocr-result");
     };
 
     return (
@@ -33,9 +33,9 @@ const Result = () => {
 
             <main className="resltPage">
                 <div className="resultBtn">
-                    <button className="nowPageBtn">전체</button>
+                    <button onClick={goResult}>전체</button>
                     <button onClick={goRender}>번역 결과</button>
-                    <button onClick={goOriginal}>원본 텍스트</button>
+                    <button className="nowPageBtn">원본 텍스트</button>
                 </div>
 
                 <div className="result_main">
@@ -53,4 +53,4 @@ const Result = () => {
         </>
     )
 }
-export default Result
+export default Original

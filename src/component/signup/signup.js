@@ -14,7 +14,7 @@ const Signup = () => {
     const [nat, setNat] = useState("");
     const navigate = useNavigate();
     const goToLogin = () => {
-        navigate("/");
+        navigate("/login");
     };
     const goTosetmyinform = () => {
         navigate("/setmyinform");
@@ -56,7 +56,7 @@ const Signup = () => {
                     <button onClick={goToLogin} className="BlueBtn">가입하기</button>
                     <div className="main_main_signUp">
                         <span>이미 계정이 있으신가요?</span>
-                        <Link to="/">로그인</Link>
+                        <Link to="/login">로그인</Link>
                     </div>
                 </div>
             </main>

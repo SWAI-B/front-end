@@ -21,7 +21,7 @@
     padding: 5px;
 }
 
-.resltPage .resultBtn button{
+.resltPage .resultBtn .nowPageBtn{
     width: 110px;
     height: 40px;
     border: none;
@@ -31,13 +31,24 @@
 }
 
 
+
+
+.resltPage .resultBtn button{
+    width: 110px;
+    height: 40px;
+    border: none;
+    padding: 5px;
+    background-color: #F1F5F9;
+}
+
+
 .resltPage .result_main{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
-    height: 50vh;
+    height: 40vh;
     border: 1px solid #000000;  
     border-radius: 8px;
 }

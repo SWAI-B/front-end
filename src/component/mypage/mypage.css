@@ -2,8 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    
+    align-items: stretch;   
 }
 
 .myPage h1{
@@ -11,29 +10,28 @@
     align-self: flex-start;
     font-size: 20px;
     font-weight: bolder;
-    margin-top: 50px;
+    margin-top: 40px;
     margin-left: 20px;
 }
 
 .myPage .main_main{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     margin: 0px 20px;
 }
 
-.myPage label{
-    margin-top: 10px;
-}
 
 .myPage .pw_link{
+    align-self: center;
     margin-top: 20px;
+    margin-left: 20px;
 }
 
 .myPage .main_bottom{
     display: flex;
+    align-self: center;
     flex-direction: row;
-    margin-top: 140px;
+    margin-top: 80px;
     gap: 15px;
 }
 

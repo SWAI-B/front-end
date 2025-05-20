@@ -12,7 +12,7 @@ const Title = () => {
     const [lang, setLang] = useState("");
     const navigate = useNavigate();
     const goToLogin = () => {
-        navigate('/');
+        navigate('/login');
         }
     const goToSignup = () => {
         navigate('/setmyinform');
@@ -30,8 +30,8 @@ const Title = () => {
                 <p>근로계약서 번역 및 법률 정보 제공 서비스</p>
 
                 <SelectLanguage
-                    value={lang}
-                    onChange={e => setLang(e.target.value)}
+                        value={lang}
+                        onChange={e => setLang(e.target.value)}
                 />
 
                 <div className="main_main_btn">

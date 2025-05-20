@@ -32,7 +32,6 @@ const Home = () => {
                     <img src={logoImg} className="logoImg"/>
                     <img src={logoText} className="logoText"/>
                     <IoPersonOutline className="profileBtn" onClick={goMypage}/>
-                    <IoMenu className="hamburgerBtn" />
                 </div>
             </header>
 

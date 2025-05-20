@@ -12,8 +12,8 @@ const Summary = () => {
         navigate("/ocr-result");
     };
     // 자세히보기를 법률 정보 페이지랑 연결함
-    const goinform = () => {
-        navigate("/information");
+    const goEachsummary = () => {
+        navigate("/eachsummary");
     };
 
     return (
@@ -47,7 +47,7 @@ const Summary = () => {
                             <p>내용</p>
                             <p className="content_ex">설명</p>
                         </div>
-                        <button className="detail_btn" onClick={goinform}>
+                        <button className="detail_btn" onClick={goEachsummary}>
                             <p>자세히 보기</p>
                             <HiArrowTopRightOnSquare/>
                         </button>
@@ -62,7 +62,7 @@ const Summary = () => {
                             <p>내용</p>
                             <p className="content_ex">설명</p>
                         </div>
-                        <button className="detail_btn" onClick={goinform}>
+                        <button className="detail_btn" onClick={goEachsummary}>
                             <p>자세히 보기</p>
                             <HiArrowTopRightOnSquare/>
                         </button>

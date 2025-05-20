@@ -27,17 +27,11 @@ transform: translateX(-50%) → 그 요소를 자신의 절반 너비만큼 다�
    로고이미지 사이에서 아이콘 영역 전체를 오른쪽으로 밀어냄 */
     .home_logo .profileBtn {
     margin-left: auto;
+    margin-right: 10px;
     font-size: 24px;
     line-height: 1;
 } 
 
-  /* 두 번째 아이콘은 그냥 profileBtn 다음에 붙도록 */
-.home_logo .hamburgerBtn {
-    margin-left: 8px;
-    margin-right: 16px;
-    font-size: 24px;
-    line-height: 1;
-}
 
 
 .homePage{

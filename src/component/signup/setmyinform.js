@@ -14,10 +14,10 @@ const Setmyinform = () => {
     const [nat, setNat] = useState("");
     const navigate = useNavigate();
     const goToLogin = () => {
-        navigate("/");
+        navigate("/login");
     };
     const goTotitle = () => {
-        navigate("/title");
+        navigate("/");
     };
         const goToSignup = () => {
         navigate("/signup");
@@ -66,7 +66,7 @@ const Setmyinform = () => {
                     <button onClick={goToSignup} className="BlueBtn" >다음</button>
                     <div className="main_main_signUp">
                         <span>이미 계정이 있으신가요?</span>
-                        <Link to="/">로그인</Link>
+                        <Link to="/login">로그인</Link>
                     </div>
                 </div>
             </main>

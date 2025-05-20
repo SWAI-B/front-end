@@ -113,8 +113,12 @@
     border: 1px solid #64748B;
     border-radius: 10px;
     background-color: #ffffff;
-    font-size: 16px;
+    font-size: 14px;
     gap: 5px;
+}
+
+.sumaryPage .detail_btn p{
+    margin: 8px 0;
 }
 
 

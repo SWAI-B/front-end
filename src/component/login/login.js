@@ -14,7 +14,7 @@ const Login = () => {
         navigate('/home');
         }
     const goToTitle = () => {
-        navigate('/title');
+        navigate('/');
         }
         
 
@@ -49,23 +49,21 @@ const Login = () => {
                 </div>
 
                 <div className="main_main">
-                    <div className="main_main_id_pw">
+                    <label htmlFor="id">아이디</label>
+                    <input className="inputBox" id="id" placeholder="아이디를 입력하세요"/>
 
-                        <label htmlFor="id">아이디</label>
-                        <input className="inputBox" id="id" placeholder="아이디를 입력하세요"/>
-
-                        <div className="main_main_password">
-                            <label htmlFor="pw">비밀번호</label>
-                            <div>찾기</div>   
-                        </div>
-                        <input className="inputBox" id="pw" placeholder="비밀번호를 입력하세요"/>
-
-                        <div className="main_main_signUp">
-                            <span>계정이 없으신가요?</span>
-                            <Link to="/setmyinform">회원가입</Link>
-                        </div>
-                        <button onClick={loginToHome} className="BlueBtn">로그인</button>
+                    <div className="main_main_pw">
+                        <label htmlFor="pw">비밀번호</label>
+                        <Link to="/findpw">비밀번호 찾기</Link>
                     </div>
+                    <input className="inputBox" id="pw" placeholder="비밀번호를 입력하세요"/>
+
+                    <div className="main_main_signUp">
+                        <span>계정이 없으신가요?</span>
+                        <Link to="/setmyinform">회원가입</Link>
+                    </div>
+                    
+                    <button onClick={loginToHome} className="BlueBtn">로그인</button>
                 </div>
             </main>
         </>

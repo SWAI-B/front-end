@@ -28,7 +28,7 @@ const Mypage = () => {
         navigate("/information");
         };
     const goLogin = () => {
-            navigate("/");
+            navigate("/login");
             };
     return (
         <>
